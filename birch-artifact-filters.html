@@ -11,6 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../paper-tabs/paper-tabs.html">
 <link rel="import" href="../iron-media-query/iron-media-query.html">
 <link rel="import" href="../wc-i18n/wc-i18n.html">
+<link rel="import" href="../oak-i18n-behavior/oak-i18n-behavior.html">
 <!--
 An element providing a solution to no problem in particular.
 
@@ -26,7 +27,7 @@ Example:
 <dom-module id="birch-artifact-filters">
   <link rel="import" type="css" href="birch-artifact-filters.css">
   <template>
-    <wc-i18n-src locale='[[_lang]]' locale-dir='[[localeDir()]]' domain='birch-artifact-filters'></wc-i18n-src>
+    <wc-i18n-src locale='[[lang]]' locale-dir='[[localeDir()]]' domain='birch-artifact-filters'></wc-i18n-src>
     <iron-media-query query="(max-width: 979px)" query-matches="{{mobile}}">
     </iron-media-query>
     <paper-tabs noink selected='{{filterVal}}' attr-for-selected='data-filter'>
@@ -82,6 +83,7 @@ Example:
 
     behaviors: [
       WCI18nBehavior,
+      OakI18nBehavior
     ],
 
     properties: {

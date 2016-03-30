@@ -22,32 +22,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <body>
 
     <!-- You can use the document as a place to set up your fixtures. -->
-    <birch-artifact-filters></birch-artifact-filters>
+    <test-fixture id='birch-artifact-filters'>
+      <birch-artifact-filters></birch-artifact-filters>
+    </test-fixture>
 
     <script>
-      var myEl = document.querySelector('birch-artifact-filters');
-
       suite('<birch-artifact-filters>', function() {
+        var el;
 
-        test('defines the "author" property', function() {
-          assert.equal(myEl.author.name, 'Dimitri Glazkov');
-          assert.equal(myEl.author.image, 'http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg');
+        setup(function() {
+          el = fixture('birch-artifact-filters')
         });
 
-        test('says hello', function() {
-          assert.equal(myEl.sayHello(), 'birch-artifact-filters says, Hello World!');
-
-          var greetings = myEl.sayHello('greetings Earthlings');
-          assert.equal(greetings, 'birch-artifact-filters says, greetings Earthlings');
-        });
-
-        test('fires lasers', function(done) {
-          myEl.addEventListener('birch-artifact-filters-lasers', function(event) {
-            assert.equal(event.detail.sound, 'Pew pew!');
-            done();
-          });
-          myEl.fireLasers();
-        });
+        test('should write some tests');
 
       });
     </script>

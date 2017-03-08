@@ -27,46 +27,45 @@ Example:
 <dom-module id="birch-artifact-filters">
   <link rel="import" type="css" href="birch-artifact-filters.css">
   <template>
-    <wc-i18n-src locale='[[lang]]' locale-dir='[[localeDir()]]' domain='birch-artifact-filters'></wc-i18n-src>
     <iron-media-query query="(max-width: 979px)" query-matches="{{mobile}}">
     </iron-media-query>
     <paper-tabs noink selected='{{filterVal}}' attr-for-selected='data-filter'>
       <paper-tab data-filter='all' title='[[i18nAll]]'>
         <div class='layout vertical center-justified center'>
           <span class='fs-all-icon'>
-            <wc-i18n key='birch-artifact-filters.all' value='{{i18nAll}}'></wc-i18n>
+            [[i18n('all')]]
           </span>
         </div>
       </paper-tab>
       <paper-tab data-filter='photos'>
         <div class='layout vertical center-justified center'>
-          <i class="fs-memories-icon fs-photos-icon" title='[[i18nPhotos]]'></i>
+          <i class="fs-memories-icon fs-photos-icon" title="[[i18n('photos')]]"></i>
           <small hidden='[[!mobile]]'>
-            <wc-i18n key='birch-artifact-filters.photos' value='{{i18nPhotos}}'></wc-i18n>
+            [[i18n('photos')]]
           </small>
         </div>
       </paper-tab>
       <paper-tab data-filter='stories'>
         <div class='layout vertical center-justified center'>
-          <i class="fs-memories-icon fs-stories-icon" title='[[i18nStories]]'></i>
+          <i class="fs-memories-icon fs-stories-icon" title="[[i18n('stories')]]"></i>
           <small hidden='[[!mobile]]'>
-            <wc-i18n key='birch-artifact-filters.stories' value='{{i18nStories}}'></wc-i18n>
+            [[i18n('stories')]]
           </small>
         </div>
       </paper-tab>
       <paper-tab data-filter='documents'>
         <div class='layout vertical center-justified center'>
-          <i class="fs-memories-icon fs-documents-icon" title='[[i18nDocuments]]'></i>
+          <i class="fs-memories-icon fs-documents-icon" title="[[i18n('documents')]]"></i>
           <small hidden='[[!mobile]]'>
-            <wc-i18n key='birch-artifact-filters.documents' value='{{i18nDocuments}}'></wc-i18n>
+            [[i18n('documents')]]
           </small>
         </div>
       </paper-tab>
       <paper-tab data-filter='audio'>
         <div class='layout vertical center-justified center'>
-          <i class="fs-memories-icon fs-audio-icon" title='[[i18nAudio]]'></i>
+          <i class="fs-memories-icon fs-audio-icon" title="[[i18n('audio')]]"></i>
           <small hidden='[[!mobile]]'>
-            <wc-i18n key='birch-artifact-filters.audio' value='{{i18nAudio}}'></wc-i18n>
+            [[i18n('audio')]]
           </small>
         </div>
       </paper-tab>
@@ -82,7 +81,7 @@ Example:
     is: 'birch-artifact-filters',
 
     behaviors: [
-      WCI18nBehavior,
+      WCI18n(),
       OakI18nBehavior
     ],
 

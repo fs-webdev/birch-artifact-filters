@@ -1,6 +1,4 @@
 [![Build Status](https://travis-ci.org/FamilySearchElements/birch-artifact-filters.svg?branch=master)](https://travis-ci.org/FamilySearchElements/birch-artifact-filters)
-[![Coverage Status](https://coveralls.io/repos/github/FamilySearchElements/birch-artifact-filters/badge.svg?branch=master)](https://coveralls.io/github/FamilySearchElements/birch-artifact-filters?branch=master)
-
 
 # birch-artifact-filters
 

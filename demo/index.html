@@ -12,14 +12,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-    <title>birch-artifact-filters Demo</title>
+    <title>fs-artifact-filters Demo</title>
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <script>
     if ('createShadowRoot' in HTMLElement.prototype) {
       window.Polymer = window.Polymer || { dom: 'shadow' }
     }
     </script>
-    <link rel="import" href="../birch-artifact-filters.html">
+    <link rel="import" href="../fs-artifact-filters.html">
   </head>
   <body unresolved>
     <template is='dom-bind'>
@@ -35,10 +35,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <option value="ko">Korean</option>
               <option value="zh">Chinese</option>
             </select>
-        <birch-artifact-filters language='[[locale]]'></birch-artifact-filters>
+        <fs-artifact-filters language='[[locale]]'></fs-artifact-filters>
     </template>
     <script>
-      var seedElement = document.querySelector('birch-artifact-filters');
+      var seedElement = document.querySelector('fs-artifact-filters');
       
       document.addEventListener("gallery-filter-changed", function(e) {
         console.log('Gallery Filter Changed: ' + e.detail.filter);

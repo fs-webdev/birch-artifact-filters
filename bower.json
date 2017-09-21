@@ -1,5 +1,5 @@
 {
-  "name": "birch-artifact-filters",
+  "name": "fs-artifact-filters",
   "version": "2.0.0",
   "authors": [
     "Anonymous <anonymous@example.com>"
@@ -10,7 +10,7 @@
     "polymer",
     "seed"
   ],
-  "main": "birch-artifact-filters.html",
+  "main": "fs-artifact-filters.html",
   "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/<USERNAME>/seed-element/",
   "ignore": [

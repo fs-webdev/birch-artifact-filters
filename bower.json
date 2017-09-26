@@ -22,7 +22,7 @@
     "paper-tabs": "PolymerElements/paper-tabs#~1.0.10",
     "iron-media-query": "PolymerElements/iron-media-query#~1.0.6",
     "wc-i18n": "jshcrowthe/wc-i18n#^2.1.0",
-    "oak-i18n-behavior": "FamilySearchElements/oak-i18n-behavior#1.x"
+    "oak-i18n-behavior": "fs-webdev/oak-i18n-behavior#1.x"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",

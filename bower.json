@@ -27,5 +27,15 @@
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#1 - 2",
     "web-component-tester": "*"
+  },
+  "variants": {
+    "1.x": {
+      "dependencies": {
+        "polymer": "Polymer/polymer#1.x"
+      },
+      "resolutions": {
+          "webcomponentsjs": "^0.7"
+      }
+    }
   }
 }

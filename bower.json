@@ -18,14 +18,24 @@
     "/test/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.1.0",
-    "paper-tabs": "PolymerElements/paper-tabs#~1.0.10",
-    "iron-media-query": "PolymerElements/iron-media-query#~1.0.6",
+    "polymer": "Polymer/polymer#1 - 2",
+    "paper-tabs": "PolymerElements/paper-tabs#^2.0.0",
+    "iron-media-query": "PolymerElements/iron-media-query#^2.0.0",
     "wc-i18n": "jshcrowthe/wc-i18n#^2.1.0",
     "oak-i18n-behavior": "fs-webdev/oak-i18n-behavior#1.x"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-component-page": "PolymerElements/iron-component-page#1 - 2",
     "web-component-tester": "*"
+  },
+  "variants": {
+    "1.x": {
+      "dependencies": {
+        "polymer": "Polymer/polymer#1.x"
+      },
+      "resolutions": {
+          "webcomponentsjs": "^0.7"
+      }
+    }
   }
 }
